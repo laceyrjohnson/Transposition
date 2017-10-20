@@ -3,11 +3,38 @@ import {BrowserModule} from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms';
 
 @Component({
+  selector: 'TranspositionGuide',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class TranspositionGuide {
+title = 'Transposition Guide';
+}
+
+@Component({
+  selector: 'TranspositionInquisition',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class TranspositionInquisition{
+title = 'TRANSPOSITION Inquisition';
+}
+
+
+@Component({
+  selector: 'PageNotFoundComponent',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class PageNotFoundComponent{
+title = 'Page Not Found';
+}
+
+@Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-
 export class AppComponent {
   title = 'TRANSPOSITION CALCULATOR';
   instruments = [new Instrument("Concert Pitch",0,127,0), new Instrument("Piccolo",0,127,0), new Instrument("English Horn",0,127,0), new Instrument("Contrabassoon",0,127,0), new Instrument("Bb Clarinet",0,127,0),new Instrument("Bass Clarinet",0,127,0), new Instrument("Soprano Saxophone",0,127,0), new Instrument("Alto Saxophone",0,127,0), new Instrument("Tenor Saxophone",0,127,0), new Instrument("Baritone Saxophone",0,127,0), new Instrument("Trumpet",0,127,0), new Instrument("F Horn",0,127,0), new Instrument("Baritone T.C.",0,127,0),new Instrument("Double Bass",0,127,0), new Instrument("Glockenspiel (Bells)",0,127,0), new Instrument("Xylophone",0,127,0),]
